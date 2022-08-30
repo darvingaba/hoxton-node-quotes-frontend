@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  /* grid-template-columns: repeat( auto-fit, minmax(500px, 1fr)); */
+}
+li{
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.126);
+  border-radius: 16px;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  background-color: rgba(165, 42, 42, 0.159);
+}
+ul{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(500px, 1fr));
+  gap: 10px;
+}
+button{
+  width: 100px;
+  padding: .4rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.426);
+  color: azure;
+  margin:1rem;
+}
+.quote{
+  border: 1px solid rgba(0, 0, 0, 0.126);
+  border-radius: 16px;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  background-color: rgba(165, 42, 42, 0.159);
+}
