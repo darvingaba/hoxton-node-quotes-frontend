@@ -34,3 +34,12 @@ button{
   padding: 1rem;
   background-color: rgba(165, 42, 42, 0.159);
 }
+.name{
+  display: flex;
+  gap: 1rem;
+}
+.quoteImg{
+  height: 600px;
+  width: 450px;
+  object-fit: cover;
+}

@@ -6,7 +6,10 @@ type Props={
 type Qoute={
     id:number,
     text:string,
-    author:string
+    firstName:string
+    lastName:string
+    age:string
+    image:string
 }
 
 export function Quotes({quotes}:Props){
@@ -17,9 +20,14 @@ export function Quotes({quotes}:Props){
         </Link>
         <ul>
           {quotes.map((quote) => (
-            <li className="quote"key={quote.id}>
+            <li className="quote" key={quote.id}>
               <p>{quote.text}</p>
-              <h2>{quote.author}</h2>
+              <img className="quoteImg" src={quote.image} alt="" />
+              <div className="name">
+                <h2>{quote.firstName}</h2>
+                <h2>{quote.lastName}</h2>
+              </div>
+              <p>Age : {quote.age}</p>
             </li>
           ))}
         </ul>

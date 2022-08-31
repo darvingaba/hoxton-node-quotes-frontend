@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 type Qoute = {
   id: number;
   text: string;
-  author: string;
+  firstName: string;
+  lastName: string;
+  age: string;
+  image: string;
 };
 export function Random() {
   let [randomQuote, setRandomQuote] = useState({} as Qoute);
@@ -16,7 +19,7 @@ export function Random() {
   return (
     <div className="quote">
       <p>{randomQuote.text}</p>
-      <h2>{randomQuote.author}</h2>
+      <h2>{randomQuote.firstName}</h2>
     </div>
   );
 }
