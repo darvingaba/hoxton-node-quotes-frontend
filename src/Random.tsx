@@ -9,13 +9,13 @@ type Qoute = {
 };
 export function Random() {
   let [randomQuote, setRandomQuote] = useState({} as Qoute);
-  // console.log(randomQuote)
+  console.log(randomQuote)
 
   useEffect(() => {
-    fetch("http://localhost:3001/random")
+    fetch("http://localhost:3001/")
       .then((resp) => resp.json())
-      .then((resp) => setRandomQuote(resp))
-  }, [randomQuote])
+      .then((resp) => setRandomQuote(resp));
+  }, []);
   return (
     <div className="quote">
       <p>{randomQuote.text}</p>
